@@ -1,0 +1,76 @@
+.Department {
+	background: #efefef;
+	> .inner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		article {
+			position: relative;
+			width: 50%;
+			.inner {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				.pic {
+					width: 50%;
+					height: 32vw;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+					}
+				}
+				.txt {
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					padding-left: 20%;
+					h2 {
+						font: normal 16px/1 'arial';
+						margin-bottom: 7vw;
+					}
+					p {
+						font: normal 16px/1 'arial';
+					}
+				}
+			}
+			&:nth-of-type(2),
+			&:nth-of-type(3),
+			&:nth-of-type(5) {
+				.inner {
+					.pic {
+						order: 2;
+					}
+					.txt {
+						order: 1;
+						justify-content: flex-end;
+					}
+				}
+			}
+			&:nth-child(1) {
+				transform: translateX(-11vw);
+			}
+			&:nth-child(2) {
+				transform: translate(11vw, -15vw);
+			}
+			&:nth-child(3) {
+				transform: translateX(-3vw);
+			}
+			&:nth-child(4) {
+				transform: translate(-11vw, 15vw);
+			}
+			&:nth-child(5) {
+				transform: translateX(11vw);
+			}
+		}
+	}
+}
