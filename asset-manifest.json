@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_pf_hk/static/css/main.f0b99f75.css",
+    "main.js": "/react_pf_hk/static/js/main.2751d2fd.js",
+    "index.html": "/react_pf_hk/index.html",
+    "main.f0b99f75.css.map": "/react_pf_hk/static/css/main.f0b99f75.css.map",
+    "main.2751d2fd.js.map": "/react_pf_hk/static/js/main.2751d2fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b99f75.css",
+    "static/js/main.2751d2fd.js"
+  ]
+}
